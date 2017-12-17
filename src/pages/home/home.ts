@@ -46,7 +46,7 @@ export class HomePage {
     this.map.one(GoogleMapsEvent.MAP_READY).then(() => {
       return this.map
         .addGroundOverlay({
-          url: "https://i1.wp.com/static.sportauto.fr/components/comments/img/profil.png?ssl=1",
+          url: "assets/icon/favicon.ico",
           bounds: bounds,
           clickable: true
         })
@@ -56,7 +56,7 @@ export class HomePage {
             .subscribe(() => {
               console.log("clicked");
               grnoudoverlay.setImage(
-                "http://www.logo20.com/logo-vert/logo-vert.jpg"
+                "assets/icon/favicon.ico"
               );
             });
         });
