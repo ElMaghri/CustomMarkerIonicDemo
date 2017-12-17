@@ -46,7 +46,7 @@ export class HomePage {
     this.map.one(GoogleMapsEvent.MAP_READY).then(() => {
       return this.map
         .addGroundOverlay({
-          url: "http://photoencadre.com/941/lever-de-soleil-a-paulilles.jpg",
+          url: "https://i1.wp.com/static.sportauto.fr/components/comments/img/profil.png?ssl=1",
           bounds: bounds,
           clickable: true
         })
@@ -56,7 +56,7 @@ export class HomePage {
             .subscribe(() => {
               console.log("clicked");
               grnoudoverlay.setImage(
-                "https://static.pexels.com/photos/20974/pexels-photo.jpg"
+                "http://www.logo20.com/logo-vert/logo-vert.jpg"
               );
             });
         });
