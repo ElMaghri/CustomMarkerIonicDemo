@@ -87,7 +87,7 @@ var HomePage = (function () {
         this.map.one(__WEBPACK_IMPORTED_MODULE_2__ionic_native_google_maps__["b" /* GoogleMapsEvent */].MAP_READY).then(function () {
             return _this.map
                 .addGroundOverlay({
-                url: "assets/icon/favicon.ico",
+                url: "assets/imgs/marker.jpg",
                 bounds: bounds,
                 clickable: true
             })
@@ -122,7 +122,7 @@ var HomePage = (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: "page-home",template:/*ion-inline-start:"/Users/pro/Desktop/lab/ionics/CustomMarkerIonicDemo/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Ionic Blank\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <div #map id="map"></div>\n</ion-content>\n'/*ion-inline-end:"/Users/pro/Desktop/lab/ionics/CustomMarkerIonicDemo/src/pages/home/home.html"*/
+            selector: "page-home",template:/*ion-inline-start:"/Users/pro/Desktop/lab/ionics/CustomMarkerIonicDemo/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Ionic Blank\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <img src="assets/imgs/marker.jpg" alt="">\n  <div #map id="map"></div>\n</ion-content>'/*ion-inline-end:"/Users/pro/Desktop/lab/ionics/CustomMarkerIonicDemo/src/pages/home/home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ionic_native_google_maps__["a" /* GoogleMaps */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Platform */]])
     ], HomePage);

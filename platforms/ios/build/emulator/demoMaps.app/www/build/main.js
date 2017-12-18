@@ -87,7 +87,7 @@ var HomePage = (function () {
         this.map.one(__WEBPACK_IMPORTED_MODULE_2__ionic_native_google_maps__["b" /* GoogleMapsEvent */].MAP_READY).then(function () {
             return _this.map
                 .addGroundOverlay({
-                url: "https://i1.wp.com/static.sportauto.fr/components/comments/img/profil.png?ssl=1",
+                url: "http://coozzy.thewebcake.com/assets/front/images/logo%20footer.png",
                 bounds: bounds,
                 clickable: true
             })
@@ -96,7 +96,7 @@ var HomePage = (function () {
                     .on(__WEBPACK_IMPORTED_MODULE_2__ionic_native_google_maps__["b" /* GoogleMapsEvent */].GROUND_OVERLAY_CLICK)
                     .subscribe(function () {
                     console.log("clicked");
-                    grnoudoverlay.setImage("http://www.logo20.com/logo-vert/logo-vert.jpg");
+                    grnoudoverlay.setImage("assets/icon/favicon.ico");
                 });
             });
             // this.map
@@ -122,7 +122,7 @@ var HomePage = (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: "page-home",template:/*ion-inline-start:"/Users/pro/Desktop/lab/ionics/demoMaps/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Ionic Blank\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <div #map id="map"></div>\n</ion-content>\n'/*ion-inline-end:"/Users/pro/Desktop/lab/ionics/demoMaps/src/pages/home/home.html"*/
+            selector: "page-home",template:/*ion-inline-start:"/Users/pro/Desktop/lab/ionics/CustomMarkerIonicDemo/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Ionic Blank\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <div #map id="map"></div>\n</ion-content>\n'/*ion-inline-end:"/Users/pro/Desktop/lab/ionics/CustomMarkerIonicDemo/src/pages/home/home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ionic_native_google_maps__["a" /* GoogleMaps */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Platform */]])
     ], HomePage);
@@ -235,7 +235,7 @@ var MyApp = (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/pro/Desktop/lab/ionics/demoMaps/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/pro/Desktop/lab/ionics/demoMaps/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/pro/Desktop/lab/ionics/CustomMarkerIonicDemo/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/pro/Desktop/lab/ionics/CustomMarkerIonicDemo/src/app/app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);

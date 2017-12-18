@@ -46,7 +46,7 @@ export class HomePage {
     this.map.one(GoogleMapsEvent.MAP_READY).then(() => {
       return this.map
         .addGroundOverlay({
-          url: "assets/icon/favicon.ico",
+          url: "assets/imgs/marker.jpg",
           bounds: bounds,
           clickable: true
         })
@@ -55,9 +55,7 @@ export class HomePage {
             .on(GoogleMapsEvent.GROUND_OVERLAY_CLICK)
             .subscribe(() => {
               console.log("clicked");
-              grnoudoverlay.setImage(
-                "assets/icon/favicon.ico"
-              );
+              grnoudoverlay.setImage("assets/icon/favicon.ico");
             });
         });
       // this.map
