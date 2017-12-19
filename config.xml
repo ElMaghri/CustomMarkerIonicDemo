@@ -3,7 +3,7 @@
     <name>demoMaps</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
-    <content original-src="index.html" src="http://192.168.1.73:8100" />
+    <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -89,4 +89,5 @@
         <variable name="API_KEY_FOR_ANDROID" value="AIzaSyDPRAs6p_jF3E-ZDxo7igQZOaaCoCSqLyM" />
         <variable name="API_KEY_FOR_IOS" value="AIzaSyDPRAs6p_jF3E-ZDxo7igQZOaaCoCSqLyM" />
     </plugin>
+    <allow-navigation href="http://192.168.1.16:8100" />
 </widget>

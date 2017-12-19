@@ -26,21 +26,18 @@ export class HomePage {
   }
 
   loadMap() {
+    let bounds: ILatLng[] = [
+      { lat: 40.712206, lng: -74.22645 },
+      { lat: 40.712217, lng: -74.22656 }
+    ];
+
     let mapOptions: GoogleMapOptions = {
       camera: {
-        target: {
-          lat: 43.0741904,
-          lng: -89.3809802
-        },
-        zoom: 1,
+        target: bounds,
         tilt: 30
       }
     };
     this.map = this.googleMaps.create("map", mapOptions);
-    let bounds: ILatLng[] = [
-      { lat: 40.712216, lng: -74.22655 },
-      { lat: 40.773941, lng: -74.12544 }
-    ];
 
     // Wait the MAP_READY before using any methods.
     this.map.one(GoogleMapsEvent.MAP_READY).then(() => {

@@ -68,21 +68,17 @@ var HomePage = (function () {
     };
     HomePage.prototype.loadMap = function () {
         var _this = this;
+        var bounds = [
+            { lat: 40.712206, lng: -74.22645 },
+            { lat: 40.712217, lng: -74.22656 }
+        ];
         var mapOptions = {
             camera: {
-                target: {
-                    lat: 43.0741904,
-                    lng: -89.3809802
-                },
-                zoom: 1,
+                target: bounds,
                 tilt: 30
             }
         };
         this.map = this.googleMaps.create("map", mapOptions);
-        var bounds = [
-            { lat: 40.712216, lng: -74.22655 },
-            { lat: 40.773941, lng: -74.12544 }
-        ];
         // Wait the MAP_READY before using any methods.
         this.map.one(__WEBPACK_IMPORTED_MODULE_2__ionic_native_google_maps__["b" /* GoogleMapsEvent */].MAP_READY).then(function () {
             return _this.map
